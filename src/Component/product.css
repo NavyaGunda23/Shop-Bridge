@@ -1,0 +1,138 @@
+.p-15{
+    padding: 15px !important;
+}
+.maintaince-message{   
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+ }
+ .app-icon {
+    fill: #DBE1EC;
+  } 
+  
+
+.table-border thead tr th {
+    font-weight: normal !important;
+    padding: 15px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: normal;
+    text-transform: uppercase;
+    outline: none;
+    background: #f8f9fb;
+    border-bottom: 1px solid #E8E8E8;
+    top: 0;
+    z-index: 8;
+    text-align: left;
+}
+.table-border td {
+    padding: 15px 10px 15px 10px;
+    display: table-cell;
+    vertical-align: middle !important;
+    border-radius: 2px;
+    border-bottom: 1px solid #E8E8E8;
+    background: #fff;
+}
+.table-border {
+    border-spacing: 0;
+    text-transform: none;
+}
+
+.icon-edit {
+    background: url('../images/editflow.svg');
+    background-repeat: no-repeat;
+}
+
+.di-block {
+    display: inline-block;
+}
+
+.icon24 {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.icon-delete {
+    background: url('../images/icon-delete.svg');
+    background-repeat: no-repeat;
+}
+.mr-10{
+    margin-right: 10px !important;
+}
+.icon16{
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.description{
+    width: 530px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin: 0px !important;
+}
+.btn-primary{
+    border: 1px solid #2a4a88;
+    padding: 10px 12px;
+    color: #2a4a88;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.m-20{
+    margin: 20px !important;
+}
+.mb-20{
+    margin-bottom: 20px !important;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.searchaddon {
+    border: none;
+    background: #fff;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555555;
+    text-align: center;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+.icon-search {
+    background: url('../images/icon-success-message.svg') no-repeat;
+}
+.icon12 {
+    width: 12px;
+    height: 12px;
+}
+.clear{
+    clear: both;
+}
+.float-right{
+    float: right;
+}
+.w-250{
+    width: 250px !important;
+}
+.serach_height{
+    height: 30px !important;
+}
+.ml-20{
+    margin-left: 20px !important;
+}
+
+button[disabled] {
+    background-color: #fafafa !important;
+    border: 1px solid #ebebeb !important;
+    cursor: not-allowed;
+    color: #b3bcc0 !important;
+}

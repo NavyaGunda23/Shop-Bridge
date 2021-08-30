@@ -1,0 +1,30 @@
+.banner-header{
+    background: #2a4a88;
+    padding: 15px;
+    display: block;
+    transition: all .7s ease-in;
+    height: 30px;
+}
+.logo {
+    float: left;
+    color: #fff !important;
+    font-size: 24px;
+}
+.pull-right {
+    float: right;
+}
+.mr-15 {
+    margin-right: 15px !important;
+}
+.icon-user {
+    background: url('../images/icon-user.svg');
+    background-repeat: no-repeat;
+}
+
+.di-block {
+    display: inline-block;
+}
+.icon24 {
+    width: 24px !important;
+    height: 24px !important;
+}

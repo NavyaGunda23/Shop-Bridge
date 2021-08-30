@@ -1,0 +1,44 @@
+#service-created {
+    position: fixed;
+    bottom: 0;
+    padding: 0 5px;
+    line-height: 55px;
+    background-color: #dff0d8;
+    opacity: .9;
+    margin-bottom: -55px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+.ml-65 {
+    margin-left: 65px !important;
+}
+.icon32 {
+    width: 32px;
+    height: 32px;
+}
+#service-created .close {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 25px;
+}
+
+.icon-success-message {
+    background: url(../images/icon-success-message.svg) no-repeat;
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.v-middle{
+    vertical-align: middle;
+}
