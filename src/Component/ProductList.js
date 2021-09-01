@@ -22,10 +22,7 @@ function ProductList(){
  
     useEffect(() => {
         getData();
-
-   
-
-     },[counter])
+ },[counter])
      async function getData (){
         const request1 = await axios.get(`https://fakestoreapi.com/products/`);
         console.table(request1.data)
@@ -39,6 +36,12 @@ function ProductList(){
         setModifyPrd(null)
     }
    
+
+    const cancelItem = (cancel_item) => {
+            if(cancel_item){
+                setAddNew(false)
+            }
+    }
 
 
     const callback = (list,error) => {
@@ -94,11 +97,9 @@ function ProductList(){
     }
 
     const deleteData = (e) => {
-
         product.splice([e.target.closest('tr').getAttribute("id") - 1],1);
         e.target.closest('tr').remove()
         setProducts(product)
-
         setToastmsg("Product deleted Successfully")
         toastActions()
       
@@ -126,6 +127,7 @@ function ProductList(){
        
     }
 
+   
    
 
     return (
@@ -194,7 +196,7 @@ function ProductList(){
             :
             <div className="m-20">
 
-                 <AddNewItem parentCallback={callback} type={mode} prod_id = {modifyPrd} prd_list = {product} />
+                 <AddNewItem parentCallback={callback} cancelAction={cancelItem} type={mode} prod_id = {modifyPrd} prd_list = {product} />
 
                 </div>
             

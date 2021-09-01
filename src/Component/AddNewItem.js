@@ -2,7 +2,7 @@ import React, { useEffect,useRef, useState } from 'react';
 import './addnewitem.css'
 
 
-function AddNewItem({parentCallback,type, prod_id, prd_list}){
+function AddNewItem({parentCallback,type, prod_id, prd_list,cancelAction}){
     const prd_id = useRef(null)
     const prd_name = useRef(null)
     const prd_desc = useRef(null)
@@ -56,6 +56,10 @@ useEffect(() => {
        }
         parentCallback(list,error)
 
+    }
+
+    const cancelItemRow = () => {
+        cancelAction(true)
     }
 
     const errorVaidation = () => {
@@ -125,7 +129,9 @@ useEffect(() => {
                 <input type="number" className="form-control" onKeyUp={e => inputValidation(e,prd_id)} ref={prd_rating_cnt}/>
                 <div class="error-field "></div>
             </div>
-          <button onClick = {addItemRow}>Save</button>
+            <button onClick = {cancelItemRow} className="mt-10 mr-15">Cancel</button>
+          <button onClick = {addItemRow} className="mt-10 mr-15">Save</button>
+         
 
         </div>
     )
